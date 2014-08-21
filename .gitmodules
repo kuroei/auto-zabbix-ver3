@@ -13,3 +13,6 @@
 [submodule "chef_handler"]
 	path = chef_handler
 	url = git://github.com/opscode-cookbooks/chef_handler.git
+[submodule "build-essential"]
+	path = build-essential
+	url = git://github.com/opscode-cookbooks/build-essential.git
