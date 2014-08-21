@@ -1,3 +1,6 @@
 [submodule "zabbix"]
 	path = zabbix
 	url = git://github.com/laradji/zabbix.git
+[submodule "ark"]
+	path = ark
+	url = git://github.com/burtlo/ark.git
