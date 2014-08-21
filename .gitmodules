@@ -1,0 +1,3 @@
+[submodule "zabbix"]
+	path = zabbix
+	url = git://github.com/laradji/zabbix.git
