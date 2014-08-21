@@ -7,3 +7,9 @@
 [submodule "7-zip"]
 	path = 7-zip
 	url = git://github.com/sneal/7-zip.git
+[submodule "windows"]
+	path = windows
+	url = git://github.com/opscode-cookbooks/windows.git
+[submodule "chef_handler"]
+	path = chef_handler
+	url = git://github.com/opscode-cookbooks/chef_handler.git

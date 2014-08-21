@@ -3,4 +3,6 @@
 2 add the subM:ark
 	RS:CookbookNotFound - Cookbook 7-zip not found.
 3 add the subM:7-zip
- 
+	RS:CookbookNotFound - Cookbook windows not found. 
+4 add the subM:windows/chef_handle 
+	
