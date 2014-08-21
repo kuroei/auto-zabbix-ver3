@@ -8,4 +8,5 @@
 	RS::CookbookNotFound - Cookbook build-essential not found.
 5 add the subM:build-essential
 	RS:CookbookNotFound - Cookbook chocolatey not found.
-6 add the subM:chocolatey,oracle-instantclient,yum-epel,
+6 add the subM:chocolatey,oracle-instantclient,yum-epel,database
+

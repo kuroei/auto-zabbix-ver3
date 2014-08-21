@@ -25,3 +25,6 @@
 [submodule "yum-epel"]
 	path = yum-epel
 	url = git://github.com/opscode-cookbooks/yum-epel.git
+[submodule "database"]
+	path = database
+	url = git://github.com/opscode-cookbooks/database.git
