@@ -16,3 +16,12 @@
 [submodule "build-essential"]
 	path = build-essential
 	url = git://github.com/opscode-cookbooks/build-essential.git
+[submodule "chocolatey"]
+	path = chocolatey
+	url = git://github.com/chocolatey/chocolatey-cookbook.git
+[submodule "oracle-instantclient"]
+	path = oracle-instantclient
+	url = git://github.com/juliandunn/oracle-instantclient.git
+[submodule "yum-epel"]
+	path = yum-epel
+	url = git://github.com/opscode-cookbooks/yum-epel.git
