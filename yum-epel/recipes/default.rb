@@ -26,7 +26,6 @@ node['yum-epel']['repositories'].each do |repo|
       exclude node['yum'][repo]['exclude']
       failovermethod node['yum'][repo]['failovermethod']
       includepkgs node['yum'][repo]['includepkgs']
-      keepalive node['yum'][repo]['keepalive']
       max_retries node['yum'][repo]['max_retries']
       metadata_expire node['yum'][repo]['metadata_expire']
       mirror_expire node['yum'][repo]['mirror_expire']
