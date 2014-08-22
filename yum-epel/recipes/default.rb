@@ -23,7 +23,6 @@ node['yum-epel']['repositories'].each do |repo|
       description node['yum'][repo]['description']
       mirrorlist node['yum'][repo]['mirrorlist']
       enabled node['yum'][repo]['enabled']
-      cost node['yum'][repo]['cost']
       exclude node['yum'][repo]['exclude']
       enablegroups node['yum'][repo]['enablegroups']
       failovermethod node['yum'][repo]['failovermethod']
