@@ -22,7 +22,6 @@ node['yum-epel']['repositories'].each do |repo|
     yum_repository repo do
       description node['yum'][repo]['description']
       mirrorlist node['yum'][repo]['mirrorlist']
-      gpgcheck node['yum'][repo]['gpgcheck']
       gpgkey node['yum'][repo]['gpgkey']
       enabled node['yum'][repo]['enabled']
       cost node['yum'][repo]['cost']
