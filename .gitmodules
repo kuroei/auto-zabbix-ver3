@@ -49,3 +49,6 @@
 [submodule "xfs"]
 	path = xfs
 	url = git://github.com/opscode-cookbooks/xfs.git
+[submodule "java"]
+	path = java
+	url = git://github.com/agileorbit-cookbooks/java.git
