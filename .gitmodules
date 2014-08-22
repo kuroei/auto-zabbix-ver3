@@ -43,3 +43,6 @@
 [submodule "openssl"]
 	path = openssl
 	url = git://github.com/opscode-cookbooks/openssl.git
+[submodule "chef-sugar"]
+	path = chef-sugar
+	url = git://github.com/sethvargo/chef-sugar.git
