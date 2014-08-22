@@ -37,3 +37,6 @@
 [submodule "postgresql"]
 	path = postgresql
 	url = git://github.com/hw-cookbooks/postgresql.git
+[submodule "apt"]
+	path = apt
+	url = git://github.com/opscode-cookbooks/apt.git
