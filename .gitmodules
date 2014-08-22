@@ -31,3 +31,6 @@
 [submodule "aws"]
 	path = aws
 	url = git://github.com/opscode-cookbooks/aws.git
+[submodule "mysql-chef_gem"]
+	path = mysql-chef_gem
+	url = git://github.com/opscode-cookbooks/mysql-chef_gem.git

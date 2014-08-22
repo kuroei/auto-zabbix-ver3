@@ -11,3 +11,4 @@
 6 add the subM:chocolatey,oracle-instantclient,yum-epel,database
 	RS:need the aws
 7 add the subM:aws
+8 add the subM:mysql-chef_gem
