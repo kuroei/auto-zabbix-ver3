@@ -21,7 +21,6 @@ node['yum-epel']['repositories'].each do |repo|
   if node['yum'][repo]['managed']
     yum_repository repo do
       description node['yum'][repo]['description']
-      baseurl node['yum'][repo]['baseurl']
       mirrorlist node['yum'][repo]['mirrorlist']
       gpgcheck node['yum'][repo]['gpgcheck']
       gpgkey node['yum'][repo]['gpgkey']
