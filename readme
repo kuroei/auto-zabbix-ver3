@@ -9,4 +9,5 @@
 5 add the subM:build-essential
 	RS:CookbookNotFound - Cookbook chocolatey not found.
 6 add the subM:chocolatey,oracle-instantclient,yum-epel,database
-
+	RS:need the aws
+7 add the subM:aws
