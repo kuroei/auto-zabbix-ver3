@@ -46,3 +46,6 @@
 [submodule "chef-sugar"]
 	path = chef-sugar
 	url = git://github.com/sethvargo/chef-sugar.git
+[submodule "xfs"]
+	path = xfs
+	url = git://github.com/opscode-cookbooks/xfs.git
