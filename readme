@@ -1,5 +1,5 @@
 1 add the subM:zabbix
-	RS:CookbookNotFound - Cookbook ark not found.
+:	RS:CookbookNotFound - Cookbook ark not found.
 2 add the subM:ark
 	RS:CookbookNotFound - Cookbook 7-zip not found.
 3 add the subM:7-zip
@@ -22,5 +22,6 @@
 16 add the subM:php-fpm
 17 add the subM:ufw
 18 add the subM:firewall,iptables
-
+19 the opscookbook's yum has the mothod of 'baseurl',
+   i need to create a yum-epel for myself
 
