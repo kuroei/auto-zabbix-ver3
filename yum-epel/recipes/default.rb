@@ -25,7 +25,6 @@ node['yum-epel']['repositories'].each do |repo|
       enabled node['yum'][repo]['enabled']
       exclude node['yum'][repo]['exclude']
       failovermethod node['yum'][repo]['failovermethod']
-      http_caching node['yum'][repo]['http_caching']
       include_config node['yum'][repo]['include_config']
       includepkgs node['yum'][repo]['includepkgs']
       keepalive node['yum'][repo]['keepalive']
