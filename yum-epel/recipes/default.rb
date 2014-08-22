@@ -25,7 +25,6 @@ node['yum-epel']['repositories'].each do |repo|
       enabled node['yum'][repo]['enabled']
       exclude node['yum'][repo]['exclude']
       failovermethod node['yum'][repo]['failovermethod']
-      include_config node['yum'][repo]['include_config']
       includepkgs node['yum'][repo]['includepkgs']
       keepalive node['yum'][repo]['keepalive']
       max_retries node['yum'][repo]['max_retries']
