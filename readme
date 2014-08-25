@@ -48,7 +48,8 @@ this is a test json for cloud
 "zabbix": {
     "server": {
       "install": true,
-      "install_method": "source"
+      "install_method": "source",
+      "version":"2.2.0"    //the config file use the CacheSize,so you need to up or zabbix version to 2.1.0 after
     },
     "web": {
       "install": true,
@@ -70,8 +71,8 @@ this is a test json for cloud
   }
 }
 
-# others
-cloud infor --> please use this cookbook on the layer-php, if you run it on a welayer-web.
+# others 
+ #cloud infor --> please use this cookbook on the layer-php, if you run it on a welayer-web.
 it will got error like this:
  
 
