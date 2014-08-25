@@ -1,3 +1,4 @@
+# about the subM list
 1 add the subM:zabbix
 :	RS:CookbookNotFound - Cookbook ark not found.
 2 add the subM:ark
@@ -24,4 +25,59 @@
 18 add the subM:firewall,iptables
 19 the opscookbook's yum has the mothod of 'baseurl',
    i need to create a yum-epel for myself
+
+# how to use this cookbook
+you need to do the cookbook list like this. please mmake sure u do the list by the current sort
+1 database::mysql
+2 mysql::server
+3 zabbix --> this is the zabbix agent, it will install a agent on this server
+4 zabbix::database 
+5 zabbix::server --> this is the zabbix server, it will install your zabbix server
+6 zabbix::web it will install a zabbix web-server 
+
+if you don't user the cloud, you need right the cookbook list into your runlist.
+but if you use the cloud, please don't write the runlist into your Custom_json.
+
+# Custom json
+this is a test json for cloud
+
+{
+"mysql": {
+    "server_root_password": "password"
+ },
+"zabbix": {
+    "server": {
+      "install": true,
+      "install_method": "source"
+    },
+    "web": {
+      "install": true,
+      "fqdn": "localhost"
+    },
+    "agent": {
+      "install": true,
+      "install_method": "source",
+      "servers": ["localhost","localhost"]
+    },
+    "database": {
+      "install_method": "mysql",
+      "dbname": "zabbix",
+      "dbuser": "zabbix",
+      "dbhost": "localhost",
+      "dbpassword": "password",
+      "dbport": "3306"
+    }
+  }
+}
+
+# others
+cloud infor --> please use this cookbook on the layer-php, if you run it on a welayer-web.
+it will got error like this:
+ 
+
+
+
+
+
+
 
