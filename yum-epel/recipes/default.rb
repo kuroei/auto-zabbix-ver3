@@ -28,9 +28,6 @@ node['yum-epel']['repositories'].each do |repo|
       includepkgs node['yum'][repo]['includepkgs']
       metadata_expire node['yum'][repo]['metadata_expire']
       priority node['yum'][repo]['priority']
-      sslclientcert node['yum'][repo]['sslclientcert']
-      sslclientkey node['yum'][repo]['sslclientkey']
-      sslverify node['yum'][repo]['sslverify']
       timeout node['yum'][repo]['timeout']
       action :create
     end
