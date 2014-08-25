@@ -61,3 +61,6 @@
 [submodule "firewall"]
 	path = firewall
 	url = git://github.com/opscode-cookbooks/firewall.git
+[submodule "php"]
+	path = php
+	url = git://github.com/opscode-cookbooks/php.git
