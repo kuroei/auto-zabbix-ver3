@@ -64,3 +64,6 @@
 [submodule "php"]
 	path = php
 	url = git://github.com/opscode-cookbooks/php.git
+[submodule "iis"]
+	path = iis
+	url = git://github.com/opscode-cookbooks/iis.git
