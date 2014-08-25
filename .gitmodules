@@ -67,3 +67,6 @@
 [submodule "iis"]
 	path = iis
 	url = git://github.com/opscode-cookbooks/iis.git
+[submodule "xml"]
+	path = xml
+	url = git://github.com/opscode-cookbooks/xml.git
