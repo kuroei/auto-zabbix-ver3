@@ -74,7 +74,12 @@ this is a test json for cloud
 # others 
  #cloud infor --> please use this cookbook on the layer-php, if you run it on a welayer-web.
 it will got error like this:
- 
+
+# about cookbook zbx-ser-conf
+this one is used to add the agent info from the cloud json by the Zabbix-api. make sure you will do it  on the zabbix-server.
+
+# about cookbook zbx-agent-conf
+this one is used to add the server info.
 
 
 
