@@ -70,6 +70,3 @@
 [submodule "xml"]
 	path = xml
 	url = git://github.com/opscode-cookbooks/xml.git
-[submodule "zbx-conf"]
-	path = zbx-conf
-	url = git://github.com/kuroei/zbx-conf.git
