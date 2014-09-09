@@ -1,30 +1,46 @@
 # about the subM list
-1 add the subM:zabbix
-:	RS:CookbookNotFound - Cookbook ark not found.
-2 add the subM:ark
-	RS:CookbookNotFound - Cookbook 7-zip not found.
-3 add the subM:7-zip
-	RS:CookbookNotFound - Cookbook windows not found. 
-4 add the subM:windows/chef_handle 
-	RS::CookbookNotFound - Cookbook build-essential not found.
-5 add the subM:build-essential
-	RS:CookbookNotFound - Cookbook chocolatey not found.
-6 add the subM:chocolatey,oracle-instantclient,yum-epel,database
-	RS:need the aws
-7 add the subM:aws
-8 add the subM:mysql-chef_gem
-9 add the subM:postgresql
-10 add the subM:apt
-11 add the subM:openssl
-12 add the subM:chef-sugar
-13 add the subM:xps
-14 add the subM:java
-15 add the cpan path
-16 add the subM:php-fpm
-17 add the subM:ufw
-18 add the subM:firewall,iptables
-19 the opscookbook's yum has the mothod of 'baseurl',
-   i need to create a yum-epel for myself
+part -1-
+　git://github.com/laradji/zabbix.git
+　git://github.com/burtlo/ark.git
+　git://github.com/sneal/7-zip.git
+　git://github.com/opscode-cookbooks/windows.git
+　git://github.com/opscode-cookbooks/chef_handler.git
+　git://github.com/opscode-cookbooks/build-essential.git
+　git://github.com/chocolatey/chocolatey-cookbook.git
+　git://github.com/juliandunn/oracle-instantclient.git
+　git://github.com/opscode-cookbooks/database.git
+　git://github.com/opscode-cookbooks/aws.git
+　git://github.com/opscode-cookbooks/mysql-chef_gem.git
+　git://github.com/hw-cookbooks/postgresql.git
+　git://github.com/opscode-cookbooks/apt.git
+　git://github.com/opscode-cookbooks/openssl.git
+　git://github.com/sethvargo/chef-sugar.git
+　git://github.com/opscode-cookbooks/xfs.git
+　git://github.com/agileorbit-cookbooks/java.git
+　git://github.com/yevgenko/cookbook-php-fpm.git
+　git://github.com/opscode-cookbooks/ufw.git
+　git://github.com/opscode-cookbooks/iptables.git
+　git://github.com/opscode-cookbooks/firewall.git
+　git://github.com/opscode-cookbooks/php.git
+　git://github.com/opscode-cookbooks/iis.git
+　git://github.com/opscode-cookbooks/xml.git
+
+part -2-
+* /yum-epel  -> github.com/opscode-cookbooks/yum-epel.git
+but you need to edit the yum-epel.repositories like this
+
+<code>
+　description node['yum'][repo]['description']
+　mirrorlist node['yum'][repo]['mirrorlist']
+　enabled node['yum'][repo]['enabled']
+　exclude node['yum'][repo]['exclude']
+　failovermethod node['yum'][repo]['failovermethod']
+　includepkgs node['yum'][repo]['includepkgs']
+　metadata_expire node['yum'][repo]['metadata_expire']
+　priority node['yum'][repo]['priority']
+</code>
+
+* /cpan -> github.com/melezhik/cookbooks/cpan
 
 # how to use this cookbook
 you need to do the cookbook list like this. please mmake sure u do the list by the current sort
